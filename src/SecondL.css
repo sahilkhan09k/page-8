@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.head{
+    margin: 40px 0 30px 55px;
+    text-align: left;
+}
+.h2{
+    font-weight: 500;
+    font-size: 40px;
+    margin-top: 7px;
+}
+.b1{
+    display: flex;
+    align-items: center;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+.box1{
+    background-color: #d9e7ef;
+    display: flex;
+   
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    border: 1px solid #d9e7ef;
+    height: 50px;
+    width: 450px;
+    border-radius: 8px;
+    color: black;
+    margin: 20px 10px 20px 0;
+}
+.box1:hover{
+    cursor: pointer;
+    background-color: #7ebadd;
+}
+.l{
+    margin: 10px;
+}
+.check{
+    height: 50px;
+    width: 50px; 
+    border-radius: 8px;
+    margin-bottom: 0;
+}
+.img{
+    height: 30px;
+    width: 30px;
+}
+.line{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+}
+.l1{
+  height: 3px;
+  width: 40%;
+  background-color: black;
+}
+.l2{
+    height: 3px;
+    width: 60%;
+    background-color: gray;
+}
+.foor{
+    display: flex;
+}
+.bc{
+    height: 30px;
+    width: 100px;
+    margin-top: 30px;
+    margin-left: 10px;
+    background-color: white;
+    border: 1px solid #d9e7ef;
+    border-radius: 5px;
+}
+.bc:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    .main {
+        margin-left: 5px;
+    }
+    .b1 {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .box1 {
+        width: 100%; /* Full width on small screens */
+        height: 45px;
+    }
+    .bc {
+        margin-top: 80px;
+        margin-left: 0px;
+        width: 90px;
+    }
+    .img {
+        height: 25px;
+        width: 25px;
+    }
+    .h2 {
+        font-size: 1.2rem; /* Smaller heading */
+    }
+}
+
+/* For tablets and medium devices */
+@media (min-width: 600px) and (max-width: 1024px) {
+    .box1 {
+        width: 350px; /* Smaller width on tablets */
+        height: 50px;
+    }
+    .bc {
+        margin-top: 100px;
+        width: 80px;
+    }
+}
+
